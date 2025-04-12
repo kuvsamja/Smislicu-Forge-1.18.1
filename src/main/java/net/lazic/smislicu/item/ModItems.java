@@ -15,7 +15,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> BIRGEROVAKREMA = ITEMS.register("birgerovakrema",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-    public static final RegistryObject<Item> BIRGEROVAKREMA = ITEMS.register("birgerovakrema",
+    public static final RegistryObject<Item> TOMIC = ITEMS.register("tomic",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 
