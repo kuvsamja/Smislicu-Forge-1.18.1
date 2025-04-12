@@ -14,9 +14,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Smislicu.MOD_ID);
 
     public static final RegistryObject<Item> BIRGEROVAKREMA = ITEMS.register("birgerovakrema",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
     public static final RegistryObject<Item> TOMIC = ITEMS.register("tomic",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
 
 
     public static void register(IEventBus eventBus) {

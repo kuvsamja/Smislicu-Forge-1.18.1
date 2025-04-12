@@ -1,5 +1,6 @@
 package net.lazic.smislicu;
 
+import net.lazic.smislicu.block.ModBlocks;
 import net.lazic.smislicu.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,7 +32,7 @@ public class Smislicu
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
-
+        ModBlocks.register(eventBus);
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
