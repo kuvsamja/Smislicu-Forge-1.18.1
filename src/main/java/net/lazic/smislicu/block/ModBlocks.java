@@ -24,6 +24,17 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.RANDOM_AHH_TAB);
 
+    public static final RegistryObject<Block> SIGMIUM_ORE = registerBlock("sigmium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.RANDOM_AHH_TAB);
+
+    public static final RegistryObject<Block> BLOCK_OF_SIGMIUM = registerBlock("block_of_sigmium",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.RANDOM_AHH_TAB);
+
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

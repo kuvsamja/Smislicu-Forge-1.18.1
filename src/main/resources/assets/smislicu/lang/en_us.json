@@ -1,8 +1,12 @@
 {
   "item.smislicu.birgerovakrema": "Birgerova Krema",
   "item.smislicu.tomic": "Tomic",
+  "item.smislicu.sigmium_ingot": "Sigmium Ingot",
+  "item.smislicu.raw_sigmium": "Raw Sigmium",
 
- "block.smislicu.block_of_aleksandar_corluka": "Block of Aleksandar Corluka",
+  "block.smislicu.block_of_aleksandar_corluka": "Block of Aleksandar Corluka",
+  "block.smislicu.block_of_sigmium": "Block of Sigmium",
+  "block.smislicu.sigmium_ore": "Sigmium Ore",
 
 
   "itemGroup.random_ahh_tab": "Random Ahh Tab"

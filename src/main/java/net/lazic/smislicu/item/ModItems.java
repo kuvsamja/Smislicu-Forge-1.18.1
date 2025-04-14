@@ -15,7 +15,14 @@ public class ModItems {
 
     public static final RegistryObject<Item> BIRGEROVAKREMA = ITEMS.register("birgerovakrema",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
+
     public static final RegistryObject<Item> TOMIC = ITEMS.register("tomic",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
+
+    public static final RegistryObject<Item> SIGMIUM_INGOT = ITEMS.register("sigmium_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
+
+    public static final RegistryObject<Item> RAW_SIGMIUM = ITEMS.register("raw_sigmium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
 
 
