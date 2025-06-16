@@ -25,6 +25,8 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_SIGMIUM = ITEMS.register("raw_sigmium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
 
+    public static final RegistryObject<Item> NIS = ITEMS.register("nis",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
