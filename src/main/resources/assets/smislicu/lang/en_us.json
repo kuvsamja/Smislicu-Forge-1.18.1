@@ -1,9 +1,12 @@
 {
-  "item.smislicu.birgerovakrema": "Birgerova Krema",
+  "item.smislicu.birgerova_krema": "Birgerova Krema",
   "item.smislicu.tomic": "Tomic",
   "item.smislicu.sigmium_ingot": "Sigmium Ingot",
   "item.smislicu.raw_sigmium": "Raw Sigmium",
   "item.smislicu.nis": "Genshin",
+  "item.smislicu.anina_vodka": "Anina vodka",
+  "item.smislicu.knjaz": "Knjaz Milos",
+  "item.smislicu.becka": "Becka",
 
   "block.smislicu.block_of_aleksandar_corluka": "Block of Aleksandar Corluka",
   "block.smislicu.block_of_sigmium": "Block of Sigmium",

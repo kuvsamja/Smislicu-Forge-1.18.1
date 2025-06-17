@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "smislicu:item/birgerovakrema"
+    "layer0": "smislicu:item/becka"
   }
 }
