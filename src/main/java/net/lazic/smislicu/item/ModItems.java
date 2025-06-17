@@ -1,6 +1,9 @@
 package net.lazic.smislicu.item;
 
 import net.lazic.smislicu.Smislicu;
+import net.lazic.smislicu.item.custom.AninaVodkaItem;
+import net.lazic.smislicu.item.custom.KnjazItem;
+import net.lazic.smislicu.item.custom.NuklearnaBigijevaKremaItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,13 +31,13 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));
 
     public static final RegistryObject<Item> ANINA_VODKA = ITEMS.register("anina_vodka",
-            () -> new Item(new Item.Properties()
+            () -> new AninaVodkaItem(new Item.Properties()
                     .tab(ModCreativeModeTab.RANDOM_AHH_TAB)
                     .food(ModFoods.ANINA_VODKA)
                     .stacksTo(16)));
 
     public static final RegistryObject<Item> KNJAZ = ITEMS.register("knjaz",
-            () -> new Item(new Item.Properties()
+            () -> new KnjazItem(new Item.Properties()
                     .tab(ModCreativeModeTab.RANDOM_AHH_TAB)
                     .food(ModFoods.KNJAZ)
                     .stacksTo(16)));
@@ -43,6 +46,11 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.RANDOM_AHH_TAB)
                     .food(ModFoods.BECKA)));
+
+    public static final RegistryObject<Item> NUKLEARNA_BIGIJEVA_KREMA = ITEMS.register("nuklearna_bigijeva_krema",
+            () -> new NuklearnaBigijevaKremaItem(new Item.Properties()
+                    .tab(ModCreativeModeTab.RANDOM_AHH_TAB)
+                    .stacksTo(16)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
