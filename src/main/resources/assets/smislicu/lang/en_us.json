@@ -8,12 +8,18 @@
   "item.smislicu.knjaz": "Knjaz Milos",
   "item.smislicu.becka": "Becka",
   "item.smislicu.nuklearna_bigijeva_krema": "Nuklearna Bigijeva Krema",
+  "item.smislicu.dowsing_rod": "Dowsing Rod",
 
   "block.smislicu.block_of_aleksandar_corluka": "Block of Aleksandar Corluka",
   "block.smislicu.block_of_sigmium": "Block of Sigmium",
   "block.smislicu.sigmium_ore": "Sigmium Ore",
 
+  "item.smislicu.dowsing_rod.no_valuables": "No Valuables Found",
 
-  "itemGroup.random_ahh_tab": "Random Ahh Tab"
+  "itemGroup.random_ahh_tab": "Random Ahh Tab",
+
+  "tooltip.smislicu.knjaz.tooltip.shift": "placeholder text shift knjaz",
+  "tooltip.smislicu.knjaz.tooltip": "placeholder text no shift knjaz"
+
 
 }

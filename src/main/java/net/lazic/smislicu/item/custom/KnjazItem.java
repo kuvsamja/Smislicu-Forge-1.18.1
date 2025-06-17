@@ -1,5 +1,8 @@
 package net.lazic.smislicu.item.custom;
 
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.commands.EffectCommands;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -11,8 +14,10 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +31,16 @@ public class KnjazItem extends Item {
     }
 
     @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        if(Screen.hasShiftDown()){
+            pTooltipComponents.add(new TranslatableComponent("tooltip.smislicu.knjaz.tooltip.shift"));
+        }
+        else{
+            pTooltipComponents.add(new TranslatableComponent("tooltip.smislicu.knjaz.tooltip"));
+        }
+    }
+
+    @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         player.startUsingItem(hand);
         return InteractionResultHolder.consume(player.getItemInHand(hand));
@@ -35,7 +50,7 @@ public class KnjazItem extends Item {
         if (!world.isClientSide && entity instanceof Player) {
             Player player = (Player) entity;
 
-            // ✅ Safely remove only negative effects
+            // Safely remove only negative effects
             List<MobEffect> toRemove = new ArrayList<>();
             for (MobEffectInstance effect : player.getActiveEffects()) {
                 if (effect.getEffect().getCategory() == MobEffectCategory.HARMFUL) {
@@ -46,7 +61,7 @@ public class KnjazItem extends Item {
                 player.removeEffect(effect);
             }
 
-            // ➕ Add your effects
+            // Add your effects
             player.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 9));
             player.addEffect(new MobEffectInstance(MobEffects.SATURATION, 6000, 2));
             player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 6000, 2));
@@ -55,7 +70,7 @@ public class KnjazItem extends Item {
             player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 6000, 3));
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 2));
 
-            // 🎯 Shrink item if not in creative
+            // Shrink item if not in creative
             if (!player.getAbilities().instabuild) {
                 stack.shrink(1);
             }

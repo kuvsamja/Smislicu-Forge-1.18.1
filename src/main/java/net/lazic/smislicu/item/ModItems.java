@@ -2,6 +2,7 @@ package net.lazic.smislicu.item;
 
 import net.lazic.smislicu.Smislicu;
 import net.lazic.smislicu.item.custom.AninaVodkaItem;
+import net.lazic.smislicu.item.custom.DowsingRodItem;
 import net.lazic.smislicu.item.custom.KnjazItem;
 import net.lazic.smislicu.item.custom.NuklearnaBigijevaKremaItem;
 import net.minecraft.world.item.*;
@@ -51,6 +52,12 @@ public class ModItems {
             () -> new NuklearnaBigijevaKremaItem(new Item.Properties()
                     .tab(ModCreativeModeTab.RANDOM_AHH_TAB)
                     .stacksTo(16)));
+
+    public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",
+            () -> new DowsingRodItem(new Item.Properties()
+                    .tab(ModCreativeModeTab.RANDOM_AHH_TAB)
+                    .durability(16)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
