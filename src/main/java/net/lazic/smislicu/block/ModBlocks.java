@@ -1,6 +1,7 @@
 package net.lazic.smislicu.block;
 
 import net.lazic.smislicu.Smislicu;
+import net.lazic.smislicu.block.custom.KostaBlock;
 import net.lazic.smislicu.item.ModCreativeModeTab;
 import net.lazic.smislicu.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -21,7 +22,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Smislicu.MOD_ID);
 
     public static final RegistryObject<Block> BLOCK_OF_ALEKSANDAR_CORLUKA = registerBlock("block_of_aleksandar_corluka",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+            () -> new KostaBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.RANDOM_AHH_TAB);
 
     public static final RegistryObject<Block> SIGMIUM_ORE = registerBlock("sigmium_ore",
