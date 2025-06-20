@@ -1,10 +1,7 @@
 package net.lazic.smislicu.item;
 
 import net.lazic.smislicu.Smislicu;
-import net.lazic.smislicu.item.custom.AninaVodkaItem;
-import net.lazic.smislicu.item.custom.DowsingRodItem;
-import net.lazic.smislicu.item.custom.KnjazItem;
-import net.lazic.smislicu.item.custom.NuklearnaBigijevaKremaItem;
+import net.lazic.smislicu.item.custom.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,7 +14,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Smislicu.MOD_ID);
 
     public static final RegistryObject<Item> BIRGEROVA_KREMA = ITEMS.register("birgerova_krema",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB).food(ModFoods.BIRGEROVA_KREMA)));
+            () -> new BigijevaKremaItem(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB).food(ModFoods.BIRGEROVA_KREMA)));
 
     public static final RegistryObject<Item> TOMIC = ITEMS.register("tomic",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RANDOM_AHH_TAB)));

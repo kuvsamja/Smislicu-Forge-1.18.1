@@ -3,11 +3,13 @@ package net.lazic.smislicu.item;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.SnowballItem;
 
 public class ModFoods {
     public static final FoodProperties BIRGEROVA_KREMA = (new FoodProperties.Builder()).fast().nutrition(1)
             .saturationMod(0.0F)
             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F)
+            .alwaysEat()
             .build();
 
     public static final FoodProperties ANINA_VODKA = (new FoodProperties.Builder()).fast()
